@@ -2,15 +2,17 @@
 <head>
 <title>this site for education purposes only</title>
 <body>
-$(document).on("contextmenu",function(e){
 
     
-     if( e.button == 2 ) {
-         e.preventDefault();
-          callYourownFucntionOrCodeHere();
-     }
-return true;
-});
+    document.onmousedown = rightclickD;
+            function rightclickD(e) 
+            { 
+                e = e||event;
+                console.log(e);
+                if (e.button == 2) {
+                //alert('Right click disabled!!!'); 
+                 return false; }
+            }
    
     
   
